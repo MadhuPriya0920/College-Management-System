@@ -1,0 +1,39 @@
+.cms-card{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    text-align:center;
+
+}
+
+.cms-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.card-icon{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+.cms-card h3{
+
+    color:#1E3A8A;
+
+}
