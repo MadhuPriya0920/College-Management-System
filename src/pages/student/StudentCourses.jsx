@@ -1,6 +1,6 @@
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
-import "./StudentCourses.css";
+
 
 export default function StudentCourses() {
   return (

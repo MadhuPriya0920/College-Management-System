@@ -11,7 +11,6 @@ import {
 
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
-import "./StudentDashboard.css";
 
 function StudentDashboard() {
 
