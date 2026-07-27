@@ -12,6 +12,10 @@ import StudentProfile from "./pages/student/StudentProfile";
 
 import FacultyLogin from "./pages/faculty/FacultyLogin";
 import FacultyDashboard from "./pages/faculty/FacultyDashboard";
+import FacultyStudents from "./pages/faculty/FacultyStudents";
+import FacultyAttendance from "./pages/faculty/FacultyAttendance";
+import FacultyAssignments from "./pages/faculty/FacultyAssignments";
+import FacultyMaterials from "./pages/faculty/FacultyMaterials";
 
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminDashboard from "./pages/admin/AdminDashboard";
@@ -19,7 +23,6 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 function App() {
   return (
     <Routes>
-
       <Route path="/" element={<HomePage />} />
 
       <Route path="/student/login" element={<StudentLogin />} />
@@ -32,10 +35,13 @@ function App() {
 
       <Route path="/faculty/login" element={<FacultyLogin />} />
       <Route path="/faculty/dashboard" element={<FacultyDashboard />} />
+      <Route path="/faculty/students" element={<FacultyStudents />} />
+      <Route path="/faculty/attendance" element={<FacultyAttendance />} />
+      <Route path="/faculty/assignments" element={<FacultyAssignments />} />
+      <Route path="/faculty/materials" element={<FacultyMaterials />} />
 
       <Route path="/admin/login" element={<AdminLogin />} />
       <Route path="/admin/dashboard" element={<AdminDashboard />} />
-
     </Routes>
   );
 }
