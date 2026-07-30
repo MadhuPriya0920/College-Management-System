@@ -25,6 +25,7 @@ export default function StudentResults() {
               <tr><td>Cloud Computing</td><td>A+</td></tr>
               <tr><td>Agile & DevOps</td><td>O</td></tr>
               <tr><td>Database Systems</td><td>A</td></tr>
+              <tr><td>Web Development</td><td>A+</td></tr>
             </tbody>
 
           </table>
