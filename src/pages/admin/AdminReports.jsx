@@ -24,6 +24,10 @@ function AdminReports() {
           <div className="page-item">
             Average Attendance : 91%
           </div>
+
+          <div className="page-item">
+            Total Staff : 100
+          </div>
         </div>
 
         <br />
