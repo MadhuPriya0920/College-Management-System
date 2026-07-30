@@ -19,7 +19,7 @@ return(
 <h1>College Management System</h1>
 
 <p>
-Welcome to the College Portal
+Welcome to College Portal
 </p>
 
 <div className="cards">
