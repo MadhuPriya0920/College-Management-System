@@ -27,6 +27,7 @@ export default function StudentAttendance() {
               <tr><td>Cloud Computing</td><td>95%</td></tr>
               <tr><td>DevOps</td><td>88%</td></tr>
               <tr><td>DBMS</td><td>90%</td></tr>
+              <tr><td>Agile Development Process</td><td>90%</td></tr>
             </tbody>
 
           </table>
