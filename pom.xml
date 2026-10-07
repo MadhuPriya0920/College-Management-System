@@ -44,6 +44,21 @@
                     </execution>
 
                     <execution>
+                        <id>run-faculty-tests</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+
+                        <configuration>
+                            <executable>npm</executable>
+                            <arguments>
+                                <argument>test</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+
+                    <execution>
                         <id>build-react-application</id>
                         <phase>test</phase>
                         <goals>
