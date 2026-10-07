@@ -44,7 +44,7 @@
                     </execution>
 
                     <execution>
-                        <id>run-faculty-tests</id>
+                        <id>run-project-tests</id>
                         <phase>test</phase>
                         <goals>
                             <goal>exec</goal>
