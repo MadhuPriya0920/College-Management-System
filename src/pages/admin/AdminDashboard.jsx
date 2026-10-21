@@ -58,6 +58,7 @@ function AdminDashboard() {
         <h1>Welcome, {adminName}</h1>
 
         <p>Manage the college efficiently from one place.</p>
+        <p>CI/CD Deployment Test - Version 2</p>
 
         <div className="cards">
           <div
