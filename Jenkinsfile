@@ -35,7 +35,7 @@ pipeline {
                     usernameVariable: 'DOCKERHUB_USER',
                     passwordVariable: 'DOCKERHUB_TOKEN'
                 )]) {
-                    bat 'echo %DOCKERHUB_TOKEN% | docker login -u %DOCKERHUB_USER% --password-stdin'
+                    bat 'powershell -NoProfile -ExecutionPolicy Bypass -Command "$env:DOCKERHUB_TOKEN | docker login --username $env:DOCKERHUB_USER --password-stdin"'
                     bat 'docker push %IMAGE_NAME%:%BUILD_NUMBER%'
                 }
             }
@@ -43,6 +43,7 @@ pipeline {
 
         stage('Deploy to Kubernetes') {
             steps {
+                bat 'kubectl create namespace %K8S_NAMESPACE% --dry-run=client -o yaml | kubectl apply -f -'
                 bat 'kubectl apply -f deployment.yaml'
                 bat 'kubectl set image deployment/college-app app=%IMAGE_NAME%:%BUILD_NUMBER% -n %K8S_NAMESPACE%'
                 bat 'kubectl rollout status deployment/college-app -n %K8S_NAMESPACE% --timeout=180s'
