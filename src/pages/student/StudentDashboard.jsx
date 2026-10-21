@@ -80,6 +80,7 @@ function StudentDashboard() {
           <h1>Welcome, {studentName}</h1>
 
           <p>Have a great day!</p>
+          <p>CI/CD Deployment Test - Version 2</p>
 
           <div className="cards">
 
